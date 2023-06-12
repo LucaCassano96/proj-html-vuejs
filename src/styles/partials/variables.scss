@@ -1,0 +1,43 @@
+/* variables */
+
+$width : 100%;
+$displayflex: flex;
+$padding:20px;
+
+
+$black: #1e1e1e;
+$green:#20AD96;
+$white:#fff;
+$blue:#3F3A64;
+$grey:#696969;
+
+
+
+/* mixing */
+
+@mixin container {
+    border: 1px solid #000;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@mixin buttom {
+    padding: 10px 40px;
+    background-color:$green;
+    color: $white;
+    font-weight: 600;
+
+    &:hover{
+        background-color: $blue;
+    }
+}
+
+@mixin flexContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+

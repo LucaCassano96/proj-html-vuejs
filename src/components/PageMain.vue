@@ -8,10 +8,7 @@ export default {
 </script>
 
 <template>
-    <div>
-        main.
-        <i class="bi bi-1-circle-fill"></i>
-    </div>
+   
 </template>
 
 <style lang="scss" scoped>

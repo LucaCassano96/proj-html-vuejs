@@ -9,7 +9,68 @@ export default{
 
 <template>
  
-header.
+    <Header>
+
+        <div id="container">
+
+            <nav>
+
+            </nav>
+
+            <div id="jambo">
+
+                <div class="jambo_description">
+                    <h5>I'M WINGMAN</h5>
+                    <h1>Peace On Earth A Wonderful Wish But No Way</h1>
+                    <p>Sucess is not overnight. It's when everyday you get a little better then the day before.It all adds up</p>
+                    <a href="#">Get started for free <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="jambo_img">
+                    <img src="src\assets\images\home-movation-hero-image.png" alt="home-movation-hero">
+                </div>
+
+                
+
+        
+            </div>
+
+            <div class="data">
+
+                <div>
+                    <div class="number">1.926</div>
+                    <div class="number_description">FINISHED SESSION</div>
+                </div>
+
+                <div>
+                    <div class="number">1.926</div>
+                    <div class="number_description">FINISHED SESSION</div>
+                </div>
+
+                <div>
+                    <div class="number">1.926</div>
+                    <div class="number_description">FINISHED SESSION</div>
+                </div>
+
+                <div>
+                    <div class="number">1.926</div>
+                    <div class="number_description">FINISHED SESSION</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="tools">
+            <a href="#"><i class="bi bi-rulers"></i></a>
+            <a href="#"><i class="bi bi-wrench-adjustable-circle-fill"></i></a>
+            <a href="#"><i class="bi bi-journal-bookmark-fill"></i></a>
+            <a href="#"><i class="bi bi-cart"></i></a>
+                    
+        </div>
+        
+    </Header>
 
 </template>
 
@@ -17,5 +78,128 @@ header.
 
 @use"../styles/partials/variables.scss" as*;
 @use"../styles/general.scss" as*;
+
+
+/* HEADER */
+
+header{
+    width: $width;
+    min-height: 300px;
+    border: 1px solid #000;
+    background-image: url("src/assets/images/abstract-wavy-smooth-lines-pattern-free-vector-2.jpg");
+    object-fit: cover;
+    position: relative;
+
+    #container{
+        @include container;
+        min-height: 300px;
+
+        nav{
+            width: $width;
+            height: 80px;
+            border: 1px solid #000;
+        }
+
+        #jambo{
+            margin-top: 50px;
+            width: $width;
+            min-height: 300px;
+            display: $displayflex;
+
+            .jambo_description{
+                width: 50%;
+                min-height: 300px;
+                border: 1px solid #000;
+                padding: $padding;
+
+                h5{
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    color: $black;
+                }
+
+                h1{
+                    font-size: 58px;
+                    font-weight: 400;
+                    color: $black;
+                }
+
+                p{
+                    color: $black;
+                    margin: 50px 0;
+                }
+
+                a{
+                    @include buttom;
+
+                    i{
+                        margin-left: 10px;
+                    }
+                }
+               
+                
+            }
+            .jambo_img{
+                width: 50%;
+                min-height: 300px;
+                border: 1px solid #000;
+                padding: 20px;
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+
+        }
+
+        .data{
+            margin-top: 60px;
+            @include flexContent;
+            text-align: center;
+            padding: $padding;
+
+            .number{
+                color: $green;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .number_description{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .tools{
+        position: absolute;
+        right: 0;
+        top: 30%;
+        width: 30px;
+        min-height: 100px;
+        background-color: $white;
+        box-shadow: -2px -2px 2px #e0e0e0;
+
+        a{
+            display: block;
+            padding: 5px;
+
+            i{
+                font-size: 20px;
+                padding: 10px 0;
+                color: $grey;
+                
+                &:hover{
+                color: $blue;
+                }
+            }
+        }
+
+
+
+    }
+
+}
 
 </style>
