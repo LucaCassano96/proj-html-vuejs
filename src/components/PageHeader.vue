@@ -1,8 +1,41 @@
 <script >
-
+import NavBarMenu from './NavBarMenu.vue'
 
 export default{
   name: "PageHeader",
+  components:{
+    NavBarMenu
+  },
+  data(){
+    return{
+        menu:[
+            {
+                navEl: "Home",
+                element:"ciao",
+            },
+            {
+                navEl: "Pages",
+                element:"bella",
+            },
+            {
+                navEl: "Courses",
+                element:"sium",
+            },
+            {
+                navEl: "Features",
+                element:"heii",
+            },
+            {
+                navEl: "Blog",
+                element:"hola",
+            },
+            {
+                navEl: "Shop",
+                element:"pocca",
+            },
+        ]
+    }
+  }
 }
 
 </script>
@@ -14,7 +47,7 @@ export default{
         <div id="container">
 
             <nav>
-
+                <NavBarMenu :links="menu"/>
             </nav>
 
             <div id="jambo">

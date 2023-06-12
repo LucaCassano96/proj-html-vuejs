@@ -15,8 +15,5 @@ export default {
 @use"../styles/partials/variables.scss" as*;
 @use"../styles/general.scss" as*;
 
-i {
-    font-size: 20px;
-    padding: 20px;
-}
+
 </style>
