@@ -132,6 +132,87 @@ export default {
 
 
     </section>
+
+
+    <!-- BOOKS -->
+
+    <section>
+
+        <div id="books">
+
+            <div class="books_description">
+
+                <h5>BOOK STORE ONLINE</h5>
+                <h2>Be Alpha With <span>Wigman's Book</span></h2>
+                <div class="description"><i class="bi bi-check2"></i> Help you understand yourself better</div>
+                <div class="description"><i class="bi bi-check2"></i> Revealing mature tips</div>
+                <div class="description"><i class="bi bi-check2"></i> Give the right advice</div>
+                <div class="description"><i class="bi bi-check2"></i> Fascinating examples of alpha man</div>
+                <div class="Ebook">
+                    <a href="#">Get Free Ebook</a>
+                </div>
+                
+
+            </div>
+
+            <div class="book">
+
+                <img src="src\assets\images\product-book-11-400x400.jpg" alt="book">
+                <div class="book_name">Alpha man by MaxCoach </div>
+                <div class="book_price">$29.00</div>
+
+                <div class="book_tools">
+
+                    <div class="tool"><a href=""><i class="bi bi-search"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-cart-check"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-heart"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-bar-chart-fill"></i></a></div>
+
+                </div>
+
+            </div>
+
+            <div class="book">
+
+                <img src="src\assets\images\product-book-10-400x400.jpg" alt="book">
+                <div class="book_name">Alpha man by MaxCoach </div>
+                <div class="book_price">$29.00</div>
+
+                <div class="book_tools">
+
+                    <div class="tool"><a href=""><i class="bi bi-search"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-cart-check"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-heart"></i></a></div>
+                    <div class="tool"><a href=""><i class="bi bi-bar-chart-fill"></i></a></div>
+
+                </div>
+
+            </div>      
+
+
+        </div>
+
+    </section>
+
+    <!-- BRANDS -->
+
+    <section>
+
+        <div id="brands">
+
+            <div><img src="src\assets\images\client-logo-05-primary.png" alt="sponsor"></div>
+            <div><img src="src\assets\images\client-logo-06-primary.png" alt="sponsor"></div>
+            <div><img src="src\assets\images\client-logo-07-primary.png" alt="sponsor"></div>
+            <div><img src="src\assets\images\client-logo-04-primary.png" alt="sponsor"></div>
+            <div><img src="src\assets\images\client-logo-03-primary.png" alt="sponsor"></div>
+            <div><img src="src\assets\images\client-logo-02-primary.png" alt="sponsor"></div>
+
+
+
+        </div>
+
+
+    </section>
    
 </template>
 
@@ -271,4 +352,129 @@ export default {
     }
 
 }
+
+
+/* BOOKS */
+
+#books{
+    @include container;
+    margin-top: 80px;
+    @include flexContent;
+    padding: $padding;
+    
+    .books_description{
+        width: calc(100% / 3);
+
+        h5{
+        font-size: 12px;
+        color: $grey;
+        margin: 10px 0;
+        }
+
+        h2{
+        font-size: 45px;
+        font-weight: 400;
+        color: $blue;
+        margin-bottom: 25px;
+
+            span{
+                color: $green;
+            }
+        }
+
+        .description{
+            color:  $grey;
+            line-height: 2;
+
+            i{
+                color: $green;
+                font-size: 18px;
+            }
+        }
+
+        .Ebook{
+            margin-top: 35px;
+
+            a{
+            
+                @include buttom;
+            }
+        }
+
+    
+    }
+
+    .book{
+
+
+        width:calc( 100% / 3);
+        position: relative;
+
+        img{
+            width: 300px;
+            
+        }
+            
+        .book_name{
+            @include flexContent;
+            justify-content: center;
+            color: $blue;
+            font-weight: 600;
+            margin-bottom: 10px
+        }
+
+        .book_price{
+            @include flexContent;
+            justify-content: center;
+            color: $green;
+            font-weight: 600;
+        }
+
+        .book_tools{
+            display: none;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            z-index: 100;
+
+            .tool{
+                padding: 5px 7px;
+                margin: 4px 0;
+                border-radius: 50%;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+                a{
+                    color: $grey;
+                    
+                    &:hover{
+                        color: $black;
+                    }
+                }
+            }
+
+        }
+
+        &:hover .book_tools{
+            display: block;
+        }
+
+        
+    }
+   
+}
+
+/*  BRANDS */
+
+#brands{
+    @include container;
+    @include flexContent;
+    margin-top: 80px;
+
+    img{
+        width: 80px;
+        filter: opacity(40%);;
+            
+    }
+}
+
 </style>
