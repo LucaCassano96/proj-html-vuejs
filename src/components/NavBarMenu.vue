@@ -19,7 +19,7 @@ export default {
         </div>
 
         <ul>
-            <li  v-for="link in links">
+            <li  v-for='(link, index) in links' :key='index'>
                 <a href="#">{{ link.navEl }} <i class="bi bi-caret-down"></i></a>
                 
                     <ul class="hidden_menu">

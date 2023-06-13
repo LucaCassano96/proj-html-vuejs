@@ -1,8 +1,60 @@
 <script >
-
+import MainCourses from './MainCourses.vue'
 
 export default {
     name: "PageMain",
+    components:{
+        MainCourses
+    },
+    data(){
+        return{
+            courses:[
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+            {
+                img: "src/assets/images/motivation-course-06-480x298.jpg",
+                prize: 30.00,
+                description: "How to be Successful: Create A Growth Mindest For Success",
+                lessons: 3,
+                students: 50,
+            },
+            ]
+        }
+    }
 }
 
 </script>
@@ -52,6 +104,26 @@ export default {
 
             </div>
 
+        </div>
+
+
+    </section>
+
+    <!-- ONLINE COURSES -->
+
+    <section>
+
+        <div class="online_courses_title"> 
+
+            <h5>BEGIN YOUR JOURNEY AT MAX</h5>
+            <h2>Latest <span>Online Courses</span></h2>
+
+        </div>
+
+        <div id="online_courses">
+
+            <MainCourses :course="courses"/>
+        
         </div>
 
 
@@ -152,6 +224,36 @@ export default {
             color: $grey;
         }
     }
+}
+
+ /* ONLINE COURSES  */
+
+.online_courses_title{
+    text-align: center;
+    margin: 80px 0 50px 0;
+
+    h5{
+        font-size: 12px;
+        color: $grey;
+    }
+
+    h2{
+        font-size: 40px;
+        color: $black;
+        font-weight: 400;
+        margin-top: 20px;
+
+        span{
+            color: $green;
+        }
+    }
+}
+
+#online_courses{
+    @include container;
+    padding: $padding;
+    @include flexContent;
+    flex-wrap: wrap;
 }
 
 </style>
