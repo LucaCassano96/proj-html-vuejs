@@ -11,45 +11,45 @@ export default {
             courses:[
             {
                 img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
+                prize: "30",
                 description: "How to be Successful: Create A Growth Mindest For Success",
                 lessons: 3,
                 students: 50,
             },
 
             {
-                img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
-                description: "How to be Successful: Create A Growth Mindest For Success",
-                lessons: 3,
+                img: "src/assets/images/motivation-course-05-480x298.jpg",
+                prize: "30",
+                description: "How to Build Confidance in Your Abilities",
+                lessons: 1,
                 students: 50,
             },
             {
-                img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
-                description: "How to be Successful: Create A Growth Mindest For Success",
-                lessons: 3,
+                img: "src/assets/images/motivation-course-04-480x298.jpg",
+                prize: "20",
+                description: "Productivity Machine - Focus in a Distracted World",
+                lessons: 5,
                 students: 50,
             },
             {
-                img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
-                description: "How to be Successful: Create A Growth Mindest For Success",
-                lessons: 3,
+                img: "src/assets/images/motivation-course-03-480x298.jpg",
+                prize: "20",
+                description: "Effective Time Management Mastery - Complete Guide",
+                lessons: 18,
                 students: 50,
             },
             {
-                img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
-                description: "How to be Successful: Create A Growth Mindest For Success",
-                lessons: 3,
+                img: "src/assets/images/motivation-course-02-480x298.jpg",
+                prize: "25.99",
+                description: "Body Language Secrets for Entreprneurs",
+                lessons: 19,
                 students: 50,
             },
             {
-                img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: 30.00,
-                description: "How to be Successful: Create A Growth Mindest For Success",
-                lessons: 3,
+                img: "src/assets/images/motivation-course-01-480x298.jpg",
+                prize: "19.99",
+                description: "Management Skills: The Science of Leadership",
+                lessons: 17,
                 students: 50,
             },
             ]
@@ -124,6 +124,10 @@ export default {
 
             <MainCourses :course="courses"/>
         
+        </div>
+
+        <div class="buttom">
+            <a href="#">View all courses <i class="bi bi-arrow-right"></i></a>
         </div>
 
 
@@ -239,7 +243,7 @@ export default {
 
     h2{
         font-size: 40px;
-        color: $black;
+        color: $blue;
         font-weight: 400;
         margin-top: 20px;
 
@@ -254,6 +258,17 @@ export default {
     padding: $padding;
     @include flexContent;
     flex-wrap: wrap;
+
 }
 
+.buttom{
+    @include flexContent;
+    justify-content: center;
+
+    a{
+        @include buttom;
+        
+    }
+
+}
 </style>

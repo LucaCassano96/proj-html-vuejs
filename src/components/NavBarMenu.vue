@@ -95,10 +95,12 @@ export default {
         }
         &:hover .hidden_menu{
             display: block;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            pointer-events: auto;
 
             li{
                 padding: 10px 0;
-                box-shadow: 2px 2px 1px 1px #e0e0e0;
+               
 
             }
         }
