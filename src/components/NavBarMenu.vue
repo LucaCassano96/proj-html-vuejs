@@ -24,7 +24,7 @@ export default {
                 
                     <ul class="hidden_menu">
 
-                        <li><a href="#">{{ link.element }}</a></li>
+                        <li v-for="submenus in link.NavMenu"><a href="#">{{ submenus}}</a></li>
                         
 
                     </ul> 
@@ -86,6 +86,7 @@ export default {
         
         }
         .hidden_menu{
+            width: 220px;
             background-color: $white;
             padding: $padding;
             position: absolute;
@@ -95,6 +96,11 @@ export default {
         &:hover .hidden_menu{
             display: block;
 
+            li{
+                padding: 10px 0;
+                box-shadow: 2px 2px 1px 1px #e0e0e0;
+
+            }
         }
         
         

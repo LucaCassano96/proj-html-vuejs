@@ -11,27 +11,27 @@ export default{
         menu:[
             {
                 navEl: "Home",
-                element:"ciao",
+                NavMenu:["Our Story","Projects","Products","Work with us", "Terms of Service"]
             },
             {
                 navEl: "Pages",
-                element:"bella",
+                NavMenu:["Start Here","Success Story","About me","About Us", "Contact me", "Terms of Service"]
             },
             {
                 navEl: "Courses",
-                element:"sium",
+                NavMenu:["Blue Planet","Motivation","live better","help others", "No pain no gain", "skills for the future"]
             },
             {
                 navEl: "Features",
-                element:"heii",
+                NavMenu:["With you everyday","FAQ","Contact Us","Second page"]
             },
             {
                 navEl: "Blog",
-                element:"hola",
+                NavMenu:["Blog","Facebook","TikTok","Linkedin"]
             },
             {
                 navEl: "Shop",
-                element:"pocca",
+                NavMenu:["Our Products","Start for free","Paly with me"]
             },
         ]
     }
@@ -118,7 +118,6 @@ export default{
 header{
     width: $width;
     min-height: 300px;
-    border: 1px solid #000;
     background-image: url("src/assets/images/abstract-wavy-smooth-lines-pattern-free-vector-2.jpg");
     object-fit: cover;
     position: relative;
@@ -130,7 +129,6 @@ header{
         nav{
             width: $width;
             height: 80px;
-            border: 1px solid #000;
         }
 
         #jambo{
@@ -142,7 +140,6 @@ header{
             .jambo_description{
                 width: 50%;
                 min-height: 300px;
-                border: 1px solid #000;
                 padding: $padding;
 
                 h5{
@@ -175,7 +172,6 @@ header{
             .jambo_img{
                 width: 50%;
                 min-height: 300px;
-                border: 1px solid #000;
                 padding: 20px;
 
                 img{
