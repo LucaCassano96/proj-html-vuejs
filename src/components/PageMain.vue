@@ -246,10 +246,67 @@ export default {
 
             </div>
 
+        </div>
+
+    </section>
+
+    <!-- ARTICLES -->
+
+    <section>
+
+        <div id="articles">
+
+            <h5>BLOG UPDATED</h5>
+            <h2>Interesting <span>articles updated </span> daily</h2>
+            <div class="articles_container">
+
+                <div class="article">
+                    
+                    <img src="src\assets\images\motivation-blog-04-480x325.jpg" alt="motivation-blog">
+                    <div class="date"><i class="bi bi-calendar"></i> May 13, 2020</div>
+                    <h5>How to Stay True to Your Personal Brand</h5>
+
+                    <p>When it comes to your buisiness or career, you want...</p>
+
+                </div>
+
+                <div class="article">
+                    
+                    <img src="src\assets\images\motivation-blog-03-480x325.jpg" alt="motivation-blog">
+                    <div class="date"><i class="bi bi-calendar"></i> May 13, 2020</div>
+                    <h5>5 Vital Lessons in 5 Years of Freelancing</h5>
+
+                    <p>ceing self-employed and working from home, it's easy to get...</p>
+
+                </div>
+
+                <div class="article">
+                    
+                    <img src="src\assets\images\motivation-blog-02-480x325.jpg" alt="motivation-blog">
+                    <div class="date"><i class="bi bi-calendar"></i> May 13, 2020</div>
+                    <h5>11 super Useful Tips for Small-Business Owners</h5>
+
+                    <p>being a small-business owner poses a ton of challenges. We...</p>
+
+                </div>
+
+                <div class="article">
+                    
+                    <img src="src\assets\images\motivation-blog-01-480x325.jpg" alt="motivation-blog">
+                    <div class="date"><i class="bi bi-calendar"></i> May 13, 2020</div>
+                    <h5>How to Give Yourself Grace to Start Again</h5>
+
+                    <p>Forgive yourself for bad habits you may started or...</p>
+
+                </div>
+
+            </div>
+
+            <a href="#">VIEW ALL POSTS</a>
 
         </div>
 
-
+        
 
     </section>
    
@@ -605,8 +662,82 @@ export default {
         }
 
     }
-
     
 }
+
+/* ARTICLES */
+
+#articles{
+        @include container;
+        margin-top: 80px;
+        padding: $padding;
+
+        h5{
+            font-size: 14px;
+            color: $grey;
+        }
+
+        h2{
+            font-weight: 400;
+            padding: 20px 0;
+            span{
+                color: $green;
+            }
+        }
+
+        .articles_container{
+            @include flexContent;
+            margin-top: 20px;
+
+            .article{
+                width: calc(100% / 5);
+                padding: 8px;
+                cursor: pointer;
+                
+
+                &:hover{
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                }
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+
+                }
+
+                .date{
+                    color: $grey;
+                    margin: 10px 0;
+                    font-size: 12px;
+                }
+
+                h5{
+                    color: $black;
+                    margin: 10px 0;
+                }
+
+                p{
+                    color: $grey;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        a{
+            margin-top: 50px;
+            padding: 5px;
+            color: $green;
+            text-align: center;
+            text-decoration: underline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+
 
 </style>
