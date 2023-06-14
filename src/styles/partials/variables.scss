@@ -1,16 +1,22 @@
 /* variables */
 
 $width : 100%;
+$halfwidth: 50%;
 $displayflex: flex;
 $padding:20px;
-
+$fontLittleSize: 14px;
+$fontMediumSize: 18px;
+$fontBigSize:40px;
 
 $black: #1e1e1e;
 $green:#20AD96;
 $white:#fff;
 $blue:#3F3A64;
 $grey:#696969;
+$lightgrey:rgb(209, 209, 209);
 
+
+$shadow:rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 
 /* mixing */
@@ -18,7 +24,6 @@ $grey:#696969;
 @mixin container {
     width: 70%;
     margin: 0 auto;
-    border: 1px solid #000;
 }
 
 @mixin buttom {

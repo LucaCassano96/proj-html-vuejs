@@ -1,10 +1,14 @@
 <script >
 import NavBarMenu from './NavBarMenu.vue'
+import PageFooter from "./PageFooter.vue"
+import PageMain from './PageMain.vue'
 
 export default{
   name: "PageHeader",
   components:{
-    NavBarMenu
+    NavBarMenu,
+    PageMain,
+    PageFooter
   },
   data(){
     return{
@@ -15,7 +19,7 @@ export default{
             },
             {
                 navEl: "Pages",
-                NavMenu:["Start Here","Success Story","About me","About Us", "Contact me", "Terms of Service"]
+                NavMenu:["Start Here","Success Story","Membership", "Courses", "Purchase guide", "About Us", "Contact US", "provacy policy", "Terms of service"]
             },
             {
                 navEl: "Courses",
@@ -104,6 +108,9 @@ export default{
         </div>
         
     </Header>
+    
+    <PageMain/>
+    <PageFooter :links="menu"/>
 
 </template>
 
@@ -138,12 +145,12 @@ header{
             display: $displayflex;
 
             .jambo_description{
-                width: 50%;
+                width: $halfwidth;
                 min-height: 300px;
                 padding: $padding;
 
                 h5{
-                    font-size: 14px;
+                    font-size: $fontLittleSize;
                     margin-bottom: 15px;
                     color: $black;
                 }
@@ -170,12 +177,13 @@ header{
                 
             }
             .jambo_img{
-                width: 50%;
+                width: $halfwidth;
                 min-height: 300px;
                 padding: 20px;
+               /*  background-image: url("src/assets/images/home-movation-shape-face-300x267.png"); */
 
                 img{
-                    width: 100%;
+                    width: $width;
                     object-fit: cover;
                 }
             }
@@ -191,12 +199,12 @@ header{
 
             .number{
                 color: $green;
-                font-size: 20px;
+                font-size: $fontMediumSize;
                 font-weight: 700;
             }
 
             .number_description{
-                font-size: 14px;
+                font-size: $fontLittleSize;
             }
         }
     }
@@ -208,14 +216,14 @@ header{
         width: 30px;
         min-height: 100px;
         background-color: $white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        box-shadow: $shadow;
 
         a{
             display: block;
             padding: 5px;
 
             i{
-                font-size: 20px;
+                font-size: $fontMediumSize;
                 padding: 10px 0;
                 color: $grey;
                 

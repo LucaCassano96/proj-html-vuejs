@@ -51,25 +51,25 @@ export default {
     cursor: pointer;
 
     &:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        box-shadow:$shadow;
         
     }
 
     img{
-        width: 100%;
+        width: $width;
         object-fit: cover;
     }
     .img_description{
-        padding: 20px;
+        padding: $padding;
         .prize{
             color: $green;
             margin-bottom: 15px;
             font-weight: 700;
-            font-size: 18px;
+            font-size: $fontMediumSize;
         }
 
         .description_course{
-            font-size: 18px;
+            font-size: $fontMediumSize;
             font-weight: 700;
             color: $blue;
             margin-bottom: 15px;

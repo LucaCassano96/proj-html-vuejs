@@ -306,8 +306,7 @@ export default {
 
         </div>
 
-        
-
+    
     </section>
    
 </template>
@@ -332,7 +331,7 @@ export default {
 
         h5{
         color: $green;
-        font-size: 14px;
+        font-size:$fontLittleSize;
             
         }
 
@@ -349,7 +348,7 @@ export default {
 
         h5{
 
-            font-size: 14px;
+            font-size: $fontLittleSize;
             margin: 100px 0 20px 0;
             line-height: 2;
             
@@ -363,7 +362,7 @@ export default {
         }
 
         p{
-            font-size: 14px;
+            font-size: $fontLittleSize;
         }
 
         
@@ -395,7 +394,7 @@ export default {
         }
 
         h4{
-            font-size: 16px;
+            font-size: $fontLittleSize;
             color: $black;
             margin: 30px 0;
         }
@@ -414,12 +413,12 @@ export default {
     margin: 80px 0 50px 0;
 
     h5{
-        font-size: 12px;
+        font-size:$fontLittleSize;
         color: $grey;
     }
 
     h2{
-        font-size: 40px;
+        font-size: $fontBigSize;
         color: $blue;
         font-weight: 400;
         margin-top: 20px;
@@ -462,13 +461,13 @@ export default {
         width: calc(100% / 3);
 
         h5{
-        font-size: 12px;
+        font-size: $fontLittleSize;
         color: $grey;
         margin: 10px 0;
         }
 
         h2{
-        font-size: 45px;
+        font-size: $fontLittleSize;
         font-weight: 400;
         color: $blue;
         margin-bottom: 25px;
@@ -484,7 +483,7 @@ export default {
 
             i{
                 color: $green;
-                font-size: 18px;
+                font-size: $fontMediumSize;
             }
         }
 
@@ -538,7 +537,7 @@ export default {
                 padding: 5px 7px;
                 margin: 4px 0;
                 border-radius: 50%;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                box-shadow: $shadow;
 
                 a{
                     color: $grey;
@@ -581,7 +580,7 @@ export default {
     @include container;
     @include flexContent;
     margin-top: 80px;
-    width: 100%;
+    width: $width;
     height: 400px;
     background-image: url("src/assets/images/1e237de1ae_Missy's Scribble Art1.jpg");
     object-fit: cover;
@@ -590,7 +589,7 @@ export default {
     .story_description{
         @include flexContent;
         justify-content: center;
-        width: 50%;
+        width: $halfwidth;
         text-align: center;
         
 
@@ -599,7 +598,7 @@ export default {
 
             h5{
                 color: $green;
-                font-size: 14px;
+                font-size: $fontLittleSize;
                 padding: 15px;
             }
 
@@ -617,16 +616,16 @@ export default {
             .profession{
                 color: $grey;
                 padding: 10px;
-                font-size: 12px;
+                font-size: $fontLittleSize;
             }
         }
 
     }
 
     .story_img{
-        width: 50%;
+        width: $halfwidth;
         img{
-            width: 100%;
+            width: $width;
             height: 400px;
             object-fit: cover;
         }
@@ -639,7 +638,7 @@ export default {
         padding: 10px;
         border-radius: 50%;
         background-color: $white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        box-shadow: $shadow;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -657,7 +656,7 @@ export default {
 
             &:hover{
                 color: $black;
-                font-size: 18px;
+                font-size: $fontMediumSize;
             }
         }
 
@@ -673,7 +672,7 @@ export default {
         padding: $padding;
 
         h5{
-            font-size: 14px;
+            font-size: $fontLittleSize;
             color: $grey;
         }
 
@@ -696,17 +695,17 @@ export default {
                 
 
                 &:hover{
-                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                    box-shadow:$shadow;
                 }
                 img{
-                    width: 100%;
+                    width: $width;
                     object-fit: cover;
                     border-radius: 5px;
 
                 }
 
                 .date{
-                    color: $grey;
+                    color: $fontLittleSize;
                     margin: 10px 0;
                     font-size: 12px;
                 }
@@ -718,7 +717,7 @@ export default {
 
                 p{
                     color: $grey;
-                    font-size: 14px;
+                    font-size: $fontLittleSize;
                 }
             }
         }
@@ -727,11 +726,10 @@ export default {
             margin-top: 50px;
             padding: 5px;
             color: $green;
-            text-align: center;
             text-decoration: underline;
-            display: flex;
+            @include flexContent;
             justify-content: center;
-            align-items: center;
+           
 
             &:hover{
                 color: $blue;

@@ -51,7 +51,7 @@ export default {
 
 #nav_container{
     @include flexContent;
-    width: 100%;
+    width: $width;
     height: 80px;
     padding: $padding;
 
@@ -79,7 +79,7 @@ export default {
            
             
             i{
-                font-size: 13px;
+                font-size: $fontLittleSize;
                 color: $black;
                 
             }
@@ -95,7 +95,7 @@ export default {
         }
         &:hover .hidden_menu{
             display: block;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            box-shadow: $shadow;
             pointer-events: auto;
             border-bottom: 2px solid $green;
 
@@ -104,9 +104,7 @@ export default {
             }
         }
         
-        
     }
-        
        
     }
     .socials i{
