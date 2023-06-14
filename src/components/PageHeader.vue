@@ -76,18 +76,18 @@ export default{
                 </div>
 
                 <div>
-                    <div class="number">1.926</div>
-                    <div class="number_description">FINISHED SESSION</div>
+                    <div class="number">100%</div>
+                    <div class="number_description">SATISFACTION RATE</div>
                 </div>
 
                 <div>
-                    <div class="number">1.926</div>
-                    <div class="number_description">FINISHED SESSION</div>
+                    <div class="number">3092+</div>
+                    <div class="number_description">ENROLLED LEARNERS</div>
                 </div>
 
                 <div>
-                    <div class="number">1.926</div>
-                    <div class="number_description">FINISHED SESSION</div>
+                    <div class="number">200</div>
+                    <div class="number_description">ONLINE INSTRUCTORS</div>
                 </div>
 
             </div>

@@ -213,6 +213,45 @@ export default {
 
 
     </section>
+
+    <!-- REAL STORIES -->
+
+    <section>
+
+        <div id="real_stories">
+
+            <div class="story_description">
+
+                <div class="description">
+                    <h5>REAL STORIES</h5>
+
+                    <p>I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portalfor people like me</p>
+                    <img src="src\assets\images\testimonial-avata-02.jpg" alt="testimonial">
+
+                    <p>Mina Hollace</p>
+                    <div class="profession">/ Freelancer</div>
+                </div>
+                
+            </div>
+
+            <div class="story_img">
+                 <img src="src\assets\images\home-movation-testimonial-image-600x439.jpg" alt="testimonial" > 
+            </div>
+
+            <div class="buttom_sliders">
+
+                <i class="bi bi-caret-up"></i>
+                <div>1/4</div>
+                <i class="bi bi-caret-down"></i>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
    
 </template>
 
@@ -409,6 +448,7 @@ export default {
 
         width:calc( 100% / 3);
         position: relative;
+        cursor: pointer;
 
         img{
             width: 300px;
@@ -475,6 +515,98 @@ export default {
         filter: opacity(40%);;
             
     }
+}
+
+
+/* REAL STORIES */
+
+#real_stories{
+    @include container;
+    @include flexContent;
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+    background-image: url("src/assets/images/1e237de1ae_Missy's Scribble Art1.jpg");
+    object-fit: cover;
+    position: relative;
+
+    .story_description{
+        @include flexContent;
+        justify-content: center;
+        width: 50%;
+        text-align: center;
+        
+
+        .description{
+            width: 45%;
+
+            h5{
+                color: $green;
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            p{
+                color: $black;
+                font-weight: 600;
+                padding: 15px;
+            }
+
+            img{
+                width: 25%;
+                border-radius: 50%;
+            }
+
+            .profession{
+                color: $grey;
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    .story_img{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    .buttom_sliders{
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include flexContent;
+        justify-content: center;
+        flex-direction: column;
+
+        &:hover{
+            width: 85px;
+            height: 85px;
+        }
+
+        i{
+            color: $grey;
+
+            &:hover{
+                color: $black;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    
 }
 
 </style>
