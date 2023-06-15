@@ -52,7 +52,7 @@ export default{
 
                 <div class="copyright"> © 2020 MaxCoach, All rights Reserved</div>
 
-                <div class="arrow"><i class="bi bi-arrow-up"></i></div>
+                <a class="arrow" href="#top"><i class="bi bi-arrow-up"></i></a> 
 
             </div>
 
@@ -135,11 +135,8 @@ footer{
             }
           }
         }
-        
-     
     }
-    
-    
+
   }
 
  
@@ -152,26 +149,23 @@ footer{
 
     .arrow{
       position: absolute;
-      padding: 20px 25px;
+      padding: 10px 15px;
       background-color: $green;
       border-radius: 50%;
-      bottom: 5px;
-      right: 5px;
+      bottom:10px;
+      right: 10px;
 
       &:hover{
         background-color: $blue;
       }
 
       i{
-        font-size: 20px;
+        font-size: 24px;
         color: $white;
       }
     }
 
 }
-
-
-
 
 
 </style>

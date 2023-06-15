@@ -11,7 +11,7 @@ export default {
             courses:[
             {
                 img: "src/assets/images/motivation-course-06-480x298.jpg",
-                prize: "30",
+                prize: "30.00",
                 description: "How to be Successful: Create A Growth Mindest For Success",
                 lessons: 3,
                 students: 50,
@@ -19,21 +19,21 @@ export default {
 
             {
                 img: "src/assets/images/motivation-course-05-480x298.jpg",
-                prize: "30",
+                prize: "30.00",
                 description: "How to Build Confidance in Your Abilities",
                 lessons: 1,
                 students: 50,
             },
             {
                 img: "src/assets/images/motivation-course-04-480x298.jpg",
-                prize: "20",
+                prize: "20.00",
                 description: "Productivity Machine - Focus in a Distracted World",
                 lessons: 5,
                 students: 50,
             },
             {
                 img: "src/assets/images/motivation-course-03-480x298.jpg",
-                prize: "20",
+                prize: "20.00",
                 description: "Effective Time Management Mastery - Complete Guide",
                 lessons: 18,
                 students: 50,
@@ -60,6 +60,8 @@ export default {
 </script>
 
 <template>
+
+    
 
         <!-- ABOUT ME -->
 
@@ -115,7 +117,7 @@ export default {
 
         <div class="online_courses_title"> 
 
-            <h5>BEGIN YOUR JOURNEY AT MAX</h5>
+            <h5>BEGIN YOUR JOURNEY AT MAXCOACH</h5>
             <h2>Latest <span>Online Courses</span></h2>
 
         </div>
@@ -453,12 +455,13 @@ export default {
 
 #books{
     @include container;
-    margin-top: 80px;
+    margin-top: 100px;
     @include flexContent;
     padding: $padding;
     
     .books_description{
         width: calc(100% / 3);
+        margin-right: 100px;
 
         h5{
         font-size: $fontLittleSize;
@@ -467,7 +470,7 @@ export default {
         }
 
         h2{
-        font-size: $fontLittleSize;
+        font-size: $fontBigSize;
         font-weight: 400;
         color: $blue;
         margin-bottom: 25px;
@@ -505,6 +508,7 @@ export default {
         width:calc( 100% / 3);
         position: relative;
         cursor: pointer;
+        margin-right: 20px;
 
         img{
             width: 300px;
@@ -530,12 +534,12 @@ export default {
             display: none;
             position: absolute;
             top: 20%;
-            right: 20%;
+            right: 15%;
             z-index: 100;
 
             .tool{
                 padding: 5px 7px;
-                margin: 4px 0;
+                margin: 4px -10px;
                 border-radius: 50%;
                 box-shadow: $shadow;
 
@@ -543,7 +547,7 @@ export default {
                     color: $grey;
                     
                     &:hover{
-                        color: $black;
+                        color: $green;
                     }
                 }
             }
@@ -582,7 +586,8 @@ export default {
     margin-top: 80px;
     width: $width;
     height: 400px;
-    background-image: url("src/assets/images/1e237de1ae_Missy's Scribble Art1.jpg");
+    background-color: $grey;
+    background-image: url("src/assets/images/abstract-wavy-smooth-lines-pattern-free-vector-2.jpg");
     object-fit: cover;
     position: relative;
 

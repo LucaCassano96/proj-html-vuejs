@@ -67,8 +67,6 @@ export default{
                     <img src="src\assets\images\home-movation-hero-image.png" alt="home-movation-hero">
                 </div>
 
-                
-
         
             </div>
 
@@ -180,11 +178,13 @@ header{
                 width: $halfwidth;
                 min-height: 300px;
                 padding: 20px;
-               /*  background-image: url("src/assets/images/home-movation-shape-face-300x267.png"); */
-
+                
                 img{
                     width: $width;
                     object-fit: cover;
+                    background-image: url("src/assets/images/home-movation-shape-face-600x534.png"); 
+                    background-size: cover; 
+
                 }
             }
 

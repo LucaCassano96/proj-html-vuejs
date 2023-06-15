@@ -14,7 +14,7 @@ export default {
 
     <section id="nav_container">
 
-        <div class="logo">
+        <div id="top" class="logo">
             <img src="src\assets\images\dark-logo.png" alt="">
         </div>
 
